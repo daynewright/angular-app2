@@ -1,0 +1,5 @@
+{
+  "debug": true,
+  "esversion": 6,
+  "predef": ["angular", "$"]
+}
