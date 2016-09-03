@@ -1,5 +1,6 @@
 {
   "debug": true,
   "esversion": 6,
+  "globalstrict": true,
   "predef": ["angular", "$"]
 }
