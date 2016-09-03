@@ -2,5 +2,6 @@
   "debug": true,
   "esversion": 6,
   "globalstrict": true,
-  "predef": ["angular", "$"]
+  "predef":  ["document", "console", "$", "$scope" ],
+  "globals": {"app": true, "angular": true}
 }
