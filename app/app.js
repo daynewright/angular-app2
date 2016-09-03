@@ -1,3 +1,3 @@
 "use strict";
 
-let app = angular.module('App', ['ngRoute']);
+let app = angular.module('MushroomApp', ['ngRoute']);
