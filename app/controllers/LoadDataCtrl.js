@@ -1,5 +1,6 @@
 "use strict";
 
-app.controller('LoadDataCtrl', ()=> {
+app.controller('LoadDataCtrl', ($scope, $http, $q)=> {
   
+
 });
