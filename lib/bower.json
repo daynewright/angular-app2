@@ -1,0 +1,22 @@
+{
+  "name": "angular-mushroom",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dayne Wright <daynewr@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/daynewright/angular-app2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
