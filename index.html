@@ -8,8 +8,44 @@
     <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   </head>
 
-  <body>
-    
+  <body ng-app="MushroomApp">
+
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              Mushroom App
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div  ng-controller="LoadDataCtrl" >
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." ng-model="search">
+            <!-- <span class="input-group-btn">
+            </span> -->
+          </div>
+          <label class="radio-inline"><input type="radio" name="optradio" ng-click="poisonousMushrooms(mushrooms)">Poisonous</label>
+          <label class="radio-inline"><input type="radio" name="optradio" ng-click="edibleMushrooms(mushrooms)">Non-poisonous</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        </div>
+        <div class="col-md-6 col-md-offset-3" ng-repeat="mushroom in mushrooms | filter: {name : search}">
+          <h1>{{mushroom.name.toUpperCase()}}</h1>
+          <h4>{{mushroom.edible}}</h4>
+          <p>{{mushroom.description}}</p>
+          <hr/>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- vender files -->
@@ -17,6 +53,14 @@
     <script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js">
     </script>
     <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
-     <script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- app -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <!-- controllers -->
+    <script type="text/javascript" src="app/controllers/LoadDataCtrl.js"></script>
+    <!-- factories -->
+    <script type="text/javascript" src="app/factories/MushroomStorage.js"></script>
+
   </body>
 </html>
