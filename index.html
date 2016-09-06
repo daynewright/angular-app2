@@ -22,16 +22,19 @@
       </nav>
     </div>
 
-    <div  ng-controller="LoadDataCtrl" >
+
+    <div ng-include="'partials/mushroom-list.html'"></div>
+
+    <!-- <div  ng-controller="LoadDataCtrl" >
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for..." ng-model="search">
-            <!-- <span class="input-group-btn">
-            </span> -->
+            <span class="input-group-btn">
+            </span>
           </div>
-          <label class="radio-inline"><input type="radio" name="optradio" ng-click="poisonousMushrooms(mushrooms)">Poisonous</label>
-          <label class="radio-inline"><input type="radio" name="optradio" ng-click="edibleMushrooms(mushrooms)">Non-poisonous</label>
+          <label class="radio-inline"><input type="radio" name="optradio" ng-click="poisonousMushrooms()">Poisonous</label>
+          <label class="radio-inline"><input type="radio" name="optradio" ng-click="edibleMushrooms()">Non-poisonous</label>
         </div>
       </div>
       <div class="row">
@@ -44,7 +47,7 @@
           <hr/>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
