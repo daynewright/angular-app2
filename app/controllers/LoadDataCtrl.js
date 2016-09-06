@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller('LoadDataCtrl', ($scope, $q, MushroomStorage) => {
+app.controller('LoadDataCtrl', ($scope, MushroomStorage) => {
   let localMushrooms = [];
 
   let mushrooms = MushroomStorage()
